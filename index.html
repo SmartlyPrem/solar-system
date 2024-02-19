@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background-color: rgb(2, 2, 92);
+        }
+
+        .parent {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            width: 700px;
+            height: 700px;
+            margin: 50px auto;
+            transition: 5s;
+        }
+
+        .orbital {
+            width: 100%;
+            height: 100%;
+            border: 2px solid grey;
+            border-radius: 50%;
+            padding: 50px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .pluto {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: aqua;
+            position: absolute;
+            top: 153px;
+            left: 50px;
+        }
+
+        .neptune {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgb(67, 223, 20);
+            position: absolute;
+            bottom: 119px;
+            left: 50px;
+        }
+
+        .earth {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgb(7, 152, 236);
+            position: absolute;
+            bottom: 49px;
+            left: 50px;
+        }
+
+        .moon {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: grey;
+            position: absolute;
+            top: -10px;
+            left: 10px;
+        }
+
+        .uranus {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgb(203, 216, 23);
+            position: absolute;
+            top: 154px;
+            right: 10px;
+        }
+
+        .ring {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 2px solid rgb(243, 219, 0);
+            position: absolute;
+            top: 150px;
+            right: 7px;
+            transform: skew(44deg);
+        }
+
+        .jupitar {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgb(67, 223, 20);
+            position: absolute;
+            bottom: 22px;
+            right: 50px;
+        }
+
+        .mars {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgb(223, 20, 20);
+            position: absolute;
+            bottom: 0px;
+            right: 50px;
+        }
+
+        .sun {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: 0px 0px 10px yellow;
+            top: 38px;
+            left: 39px;
+        }
+
+        .main:hover .orbital {
+            transform: rotate(360deg);
+            transition: 30s;
+        }
+
+        .main:hover .earth {
+            transform: rotate(1440deg);
+            transition: 20s;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="main">
+            <div class="orbital">
+                <div class="pluto"></div>
+                <div class="orbital">
+                    <div class="neptune"></div>
+                    <div class="orbital">
+                        <div class="uranus"></div>
+                        <div class="ring"></div>
+                        <div class="orbital">
+                            <div class="earth">
+                                <div class="moon"></div>
+                            </div>
+                            <div class="orbital">
+                                <div class="jupitar"></div>
+                                <div class="orbital">
+                                    <div class="mars"></div>
+                                    <div class="sun"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
